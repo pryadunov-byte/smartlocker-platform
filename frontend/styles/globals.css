@@ -1,0 +1,29 @@
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2563eb;
+  --color-accent: #f97316;
+  --color-muted: #64748b;
+}
+
+[data-theme='dark'] {
+  --color-primary: #60a5fa;
+  --color-accent: #fb923c;
+  --color-muted: #94a3b8;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100;
+}
+
+.card {
+  @apply rounded-xl bg-white shadow-md p-6 dark:bg-slate-800;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+}
