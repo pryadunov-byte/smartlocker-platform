@@ -1,0 +1,24 @@
+{
+    "appName": "SmartLocker Control Center",
+    "databasePath": "db/database.sqlite",
+    "logLevel": "INFO",
+    "kerong": {
+        "baudrate": 19200,
+        "address": 1,
+        "preferredPorts": ["COM3", "COM4", "/dev/ttyUSB0", "/dev/ttyUSB1"],
+        "unlockTimeMs": 500
+    },
+    "servo": {
+        "baudrate": 115200,
+        "preferredPorts": ["COM5", "/dev/ttyUSB2"],
+        "homeAngle": 0,
+        "sectorCount": 32
+    },
+    "watchdog": {
+        "intervalSeconds": 10,
+        "retryLimit": 3
+    },
+    "ui": {
+        "theme": "dark"
+    }
+}
