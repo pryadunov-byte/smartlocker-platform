@@ -6,7 +6,7 @@ from typing import List, Optional
 
 from serial import SerialException
 
-from .base_driver import BaseSerialDriver
+from serial.base_driver import BaseSerialDriver
 
 STX = 0x02
 ETX = 0x03

@@ -6,13 +6,17 @@ from pathlib import Path
 
 from PySide6.QtWidgets import QApplication
 
-from .config import load_config
-from .db.db_manager import DbManager
-from .gui.main_window import MainWindow
-from .serial.cu24_driver import CU24Driver
-from .serial.servo_driver import ServoDriver
-from .services.vending_controller import VendingController
-from .services.watchdog import Watchdog
+BASE_DIR = Path(__file__).resolve().parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.insert(0, str(BASE_DIR))
+
+from config import load_config
+from db.db_manager import DbManager
+from gui.main_window import MainWindow
+from serial.cu24_driver import CU24Driver
+from serial.servo_driver import ServoDriver
+from services.vending_controller import VendingController
+from services.watchdog import Watchdog
 
 
 def setup_logging(log_dir: Path, level: str) -> None:

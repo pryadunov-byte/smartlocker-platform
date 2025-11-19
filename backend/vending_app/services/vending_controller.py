@@ -5,10 +5,10 @@ import logging
 from dataclasses import dataclass
 from typing import Optional
 
-from ..config import AppConfig
-from ..db.db_manager import DbManager
-from ..serial.cu24_driver import CU24Driver
-from ..serial.servo_driver import ServoDriver
+from config import AppConfig
+from db.db_manager import DbManager
+from serial.cu24_driver import CU24Driver
+from serial.servo_driver import ServoDriver
 
 
 @dataclass

@@ -7,7 +7,7 @@ from typing import List, Optional
 
 from serial import SerialException
 
-from .base_driver import BaseSerialDriver
+from serial.base_driver import BaseSerialDriver
 
 
 class ServoDriver(BaseSerialDriver):

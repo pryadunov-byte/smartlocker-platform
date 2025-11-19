@@ -21,10 +21,10 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from ..db.db_manager import DbManager
-from ..services.vending_controller import VendingController
-from .issue_dialog import IssueDialog
-from .widgets import SectorMap
+from db.db_manager import DbManager
+from services.vending_controller import VendingController
+from gui.issue_dialog import IssueDialog
+from gui.widgets import SectorMap
 
 
 class MainWindow(QMainWindow):
