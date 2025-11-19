@@ -4,9 +4,9 @@ import logging
 import struct
 from typing import List, Optional
 
-from serial import SerialException
+from serial.serialutil import SerialException
 
-from serial.base_driver import BaseSerialDriver
+from hw_serial.base_driver import BaseSerialDriver
 
 STX = 0x02
 ETX = 0x03

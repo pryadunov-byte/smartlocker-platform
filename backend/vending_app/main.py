@@ -13,8 +13,8 @@ if str(BASE_DIR) not in sys.path:
 from config import load_config
 from db.db_manager import DbManager
 from gui.main_window import MainWindow
-from serial.cu24_driver import CU24Driver
-from serial.servo_driver import ServoDriver
+from hw_serial.cu24_driver import CU24Driver
+from hw_serial.servo_driver import ServoDriver
 from services.vending_controller import VendingController
 from services.watchdog import Watchdog
 

@@ -12,7 +12,7 @@ if str(project_dir) not in sys.path:
     sys.path.insert(0, str(project_dir))
 pathex = [str(project_dir)]
 
-package_names = ("gui", "serial", "services", "db")
+package_names = ("gui", "hw_serial", "services", "db")
 datas = [(str(project_dir / "config.json"), ".")]
 hiddenimports: list[str] = []
 

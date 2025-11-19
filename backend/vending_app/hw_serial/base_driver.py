@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from typing import Callable, Optional
 
 import serial
-from serial import SerialException
+from serial.serialutil import SerialException
 from serial.tools import list_ports
 
 

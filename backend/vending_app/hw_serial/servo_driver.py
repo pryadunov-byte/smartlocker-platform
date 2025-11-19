@@ -5,9 +5,9 @@ import logging
 import time
 from typing import List, Optional
 
-from serial import SerialException
+from serial.serialutil import SerialException
 
-from serial.base_driver import BaseSerialDriver
+from hw_serial.base_driver import BaseSerialDriver
 
 
 class ServoDriver(BaseSerialDriver):
